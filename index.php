@@ -5,8 +5,17 @@
 
     $luca = new User('Luca', 'Torre','18','lucatorre@gmail.com');
 
-    $wallet = new Accessories('Armani wallet', 79);
-    $jeans = new Clothing('Levi\'s Jeans', 109);
+    try {
+        $wallet = new Accessories('Armani wallet', 'AJ');
+    } catch(Exception $e) {
+        echo 'maintenance';
+        die();
+    }
+    try {
+        $jeans = new Clothing('Levi\'s Jeans', 'Le');
+    } catch(Exception $e) {
+        die();
+    }
 
     // Adding products to cart 
     $luca->addToCart($wallet);
