@@ -1,7 +1,7 @@
 <?php
-    require_once __DIR__ . './User.php';
-    require_once __DIR__ . './Accessories.php';
-    require_once __DIR__ . './Clothing.php';
+    require_once __DIR__ . '/User.php';
+    require_once __DIR__ . '/Accessories.php';
+    require_once __DIR__ . '/Clothing.php';
 
     $luca = new User('Luca', 'Torre','18','lucatorre@gmail.com');
 
